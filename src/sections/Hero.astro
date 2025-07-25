@@ -1,0 +1,14 @@
+---
+const imgBase = '/images/';
+---
+
+
+<section class="p-hero">
+    <h1 class="c-site-title visually-hidden">
+            森半の敬老の日
+    </h1>
+    <picture class="p-hero__img">
+        <source srcset={`${imgBase}/FV_pc.jpg`} media="(min-width: 768px)">
+        <img src={`${imgBase}/FV_sp.jpg`} alt="森半の敬老の日">
+    </picture>
+</section>

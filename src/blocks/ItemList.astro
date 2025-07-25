@@ -1,0 +1,12 @@
+---
+import ItemCard from '../components/ItemCard.astro';
+const { items } = Astro.props;
+---
+
+<div class='p-item-list'>
+  <ul class='p-item-list__cards'>
+    {items.map((item) => (
+      <ItemCard {...item} />
+    ))}
+  </ul>
+</div>

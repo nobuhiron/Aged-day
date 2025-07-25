@@ -1,0 +1,60 @@
+---
+const imgBase = '/images/';
+---
+
+<section class='p-nav'>
+  <div class='l-container l-section'>
+    <h2 class='p-nav__title'>
+      <span class='p-nav__title-ja'>コンテンツ一覧</span>
+      <span class='p-nav__title-en'>contents</span>
+    </h2>
+    <ul class='p-nav__items'>
+      <li class='p-nav__item'>
+        <a href='#about' class='p-nav__link'>
+          <div class='p-nav__thumb' data-hover={`${imgBase}/menu_1-white.png`}>
+            <img src={`${imgBase}/menu_1.png`} alt='水出し緑茶とは？' />
+          </div>
+          <p class='p-nav__text'>
+            ギフト包装・<br class='is-sm' />熨斗について
+          </p>
+        </a>
+      </li>
+      <li class='p-nav__item'>
+        <a href='#howto' class='p-nav__link'>
+          <div class='p-nav__thumb' data-hover={`${imgBase}/menu_2-white.png`}>
+            <img src={`${imgBase}/menu_2.png`} alt='美味しい淹れ方' />
+          </div>
+          <p class='p-nav__text'>選ばれる理由</p>
+        </a>
+      </li>
+      <li class='p-nav__item'>
+        <a href='#history' class='p-nav__link'>
+          <div class='p-nav__thumb' data-hover={`${imgBase}/menu_3-white.png`}>
+            <img src={`${imgBase}/menu_3.png`} alt='氷茶の歴史' />
+          </div>
+          <p class='p-nav__text'>ピックアップアイテム</p>
+        </a>
+      </li>
+      <li class='p-nav__item'>
+        <a href='#product' class='p-nav__link'>
+          <div class='p-nav__thumb' data-hover={`${imgBase}/menu_4-white.png`}>
+            <img src={`${imgBase}/menu_4.png`} alt='商品紹介' />
+          </div>
+          <p class='p-nav__text'>
+            ”美味しい"を贈る<br class='is-sm' />おすすめのアイテム
+          </p>
+        </a>
+      </li>
+      <li class='p-nav__item'>
+        <a href='#gift' class='p-nav__link'>
+          <div class='p-nav__thumb' data-hover={`${imgBase}/menu_5-white.png`}>
+            <img src={`${imgBase}/menu_5.png`} alt='ギフト' />
+          </div>
+          <p class='p-nav__text'>
+            ”ほっとする"ひとときを贈る<br class='is-sm' />おすすめのアイテム
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
