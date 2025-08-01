@@ -1,0 +1,8 @@
+---
+const { title, en } = Astro.props;
+---
+
+<h3 class={`c-reasons-title`}>
+  <span class='c-reasons-title__en'>{en}</span>
+  <span class='c-reasons-title__ja' set:html={title} />
+</h3>

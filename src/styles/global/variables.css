@@ -1,0 +1,71 @@
+/* -------------------
+   Color Palette
+------------------- */
+:root {
+  /* Base Colors */
+  --color-white: #fff;
+  --color-black: #333;
+  --color-light-beige: #f8f7f5;
+  --color-brown: #6a3c0a;
+  --color-gold: #bf9c35;
+  --color-pale-pink: #ebc5b8;
+  --color-purple: #bca8d2;
+  --color-pink: #e18e72;
+  --color-deep-pink: #c96645;
+  --color-green: #00a53c;
+
+  /* Semantic Colors */
+  --color-text: var(--color-black);
+  --color-bg: var(--color-light-beige);
+  --color-main: var(--color-brown);
+  --color-petal: var(--color-pale-pink);
+  --color-accent: var(--color-deep-pink);
+  --color-sub: var(--color-gold);
+  --color-sub2: var(--color-green);
+  --color-sub3: var(--color-pink);
+  --color-sub4: var(--color-purple);
+}
+
+/* -------------------
+   Typography
+------------------- */
+:root {
+  --font-jp: 'Noto Serif JP', 'Georgia', 'Times New Roman', serif;
+  --font-en: 'Corinthia', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* 16px ~ 18px のfluid指定 (SCSSのfz関数相当) */
+  --font-size-base: clamp(16px, 1.6vw, 18px);
+  --line-height-base: 1.62;
+
+  --font-heading: var(--font-jp);
+  --font-body: var(--font-jp);
+}
+
+/* -------------------
+   Layout
+------------------- */
+:root {
+  --layout-max-width: 1440px;
+  --layout-max-width-inner: 1200px;
+  --layout-padding-sp: 20px;
+  --layout-padding-pc: 50px;
+}
+
+/* -------------------
+   Spacing
+------------------- */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+  --spacing-5xl: 96px;
+}

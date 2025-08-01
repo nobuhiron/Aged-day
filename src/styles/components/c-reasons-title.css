@@ -1,0 +1,16 @@
+@import '../global/variables.css';
+
+.c-reasons-title {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-main);
+}
+
+.c-reasons-title__en {
+  font-size: fz(20, 24);
+  line-height: 1;
+  letter-spacing: 0.12em;
+  font-weight: var(--fw-medium);
+  color: var(--color-sub);
+  font-family: var(--font-en);
+}

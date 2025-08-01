@@ -1,0 +1,66 @@
+@import '../global/variables.css';
+
+html {
+  min-height: 100%;
+  width: 100%;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* scrollバーの常時表示は避ける（必要に応じて追加） */
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-black);
+  font-family: var(--font-jp);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--fw-regular);
+  background-color: var(--color-bg);
+  overflow-wrap: break-word;
+  height: auto !important;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: top;
+  display: block;
+}
+
+#contents-area {
+  padding-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.is-sm {
+  @media (--md) {
+    display: none;
+  }
+}
+
+.is-lg {
+  display: none;
+  @media (--lg) {
+    display: block;
+  }
+}

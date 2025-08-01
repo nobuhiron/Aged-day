@@ -1,0 +1,24 @@
+---
+import SectionTitle from '../components/SectionTitle.astro';
+import ItemCard from '../components/ItemCard.astro';
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<section id='relaxation-items' class='p-relaxation-items'>
+  <header class='p-relaxation-items__header'>
+    <div class='p-relaxation-items__header-image c-section-header__image'>
+      <SectionTitle
+        title='"ほっとする"</br>ひとときを贈る</br>おすすめアイテム'
+        en='Give the gift of "relaxation"'
+      />
+    </div>
+  </header>
+  <div class='l-container'>
+  <ul class='p-relaxation-items__cards c-item-card__wrapper'>
+    <ItemCard imgBase={imgBase} />
+    <ItemCard imgBase={imgBase} />
+    <ItemCard imgBase={imgBase} />
+    <ItemCard imgBase={imgBase} />
+    </ul>
+  </div>
+</section>

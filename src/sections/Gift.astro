@@ -1,47 +1,49 @@
 ---
-const imgBase = '/images/';
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
 <section id='gift' class='p-gift'>
-  <h2 class='c-section-title'>
-    ギフト包装・熨斗について
-    <span class='c-section-title__en'> About gift wrapping and gift tags </span>
-  </h2>
-  <div class='p-gift__content'>
-    <div class='p-gift__img'>
+  <div class='l-container'>
+    <h2 class='c-section-title'>
+      ギフト包装・熨斗について
+      <span class='c-section-title__en'>
+        About gift wrapping and gift tags
+      </span>
+    </h2>
+    <div class='p-gift__content'>
+      <div class='p-gift__img'>
+        <img src={`${imgBase}/gift_img.png`} alt='' alt='' />
+      </div>
+      <div class='p-gift__description'>
+        <p class='p-gift__text'>
+          ご希望のお客様へ無料で包装とお熨斗を承っております。<br />
+          お客様のご要望に応じて包装の上、お熨斗の表書き、名入れ、内熨斗、外熨斗なども対応しております。
+          商品ページ内のプルダウンにてご選択もしくは備考欄へご要望をお書き添えください。
+        </p>
+        <div class='p-gift__attention'>
+          <p class='p-gift__attention-text'>
+            ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
+          </p>
+          <p class='p-gift__attention-text'>
+            ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
+          </p>
+          <p class='p-gift__attention-text'>
+            ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
+          </p>
+          <p class='p-gift__attention-text'>
+            ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
+          </p>
+        </div>
+        <div class='p-gift__items'>
+          <div class='p-gift__item'></div>
+        </div>
+      </div>
+    </div>
+    <div class='p-gift__link'>
+      <a href='#' class='c-button'> 詳しくはこちら </a>
+    </div>
+    <div class='p-gift__deco'>
       <img src={`${imgBase}/svg/wave.svg`} alt='' alt='' />
     </div>
-    <div class='p-gift__description'>
-      <p class='p-gift__text'>
-        ご希望のお客様へ無料で包装とお熨斗を承っております。<br />
-        お客様のご要望に応じて包装の上、お熨斗の表書き、名入れ、内熨斗、外熨斗なども対応しております。
-        商品ページ内のプルダウンにてご選択もしくは備考欄へご要望をお書き添えください。
-      </p>
-      <div class='p-gift__attention'>
-        <p class='p-gift__attention-text'>
-          ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
-        </p>
-        <p class='p-gift__attention-text'>
-          ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
-        </p>
-        <p class='p-gift__attention-text'>
-          ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
-        </p>
-        <p class='p-gift__attention-text'>
-          ※商品の形状や大きさにより、ご希望いただきましても承れない場合がございます。
-        </p>
-      </div>
-      <div class='p-gift__items'>
-        <div class='p-gift__item'></div>
-      </div>
-    </div>
-  </div>
-  <div class='p-gift__link'>
-    <a href='#' class='c-button'>
-      詳しくはこちら
-    </a>
-  </div>
-  <div class='p-gift__deco'>
-    <img src={`${imgBase}/svg/wave.svg`} alt='' alt='' />
   </div>
 </section>

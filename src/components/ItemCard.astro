@@ -1,16 +1,22 @@
+---
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
 <li class='c-item-card'>
   <div class='c-item-card__content'>
-    <div class='c-item-card__img'>
-      <img src={`${imgBase}/svg/wave.svg`} alt='' alt='' />
+    <div class='c-item-card__image'>
+      <img src={`${imgBase}/item-1.jpg`} alt='' alt='' />
     </div>
     <div class='c-item-card__price'>
-      <span class='c-item-card__price-label'>¥</span>
+      ¥
       <span class='c-item-card__price-amount'>10,000</span>
-      <span class='c-item-card__price-unit'>円</span>
+      (税込)
     </div>
     <div class='c-item-card__text'>
       <h4 class='c-item-card__title'>
-        <span class='c-item-card__title-ja'> カテゴリー </span>
+        <span class='c-item-card__title-ja'>
+          銘茶五香（ごこう）煎茶・抹茶カステラ詰合せ
+        </span>
       </h4>
       <div class='c-item-card__description'>
         <p>
@@ -18,8 +24,8 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class='c-item-card__link'>
-    <a href='' class='c-link'> 詳しくはこちら </a>
+    <div class='c-item-card__link'>
+      <a href='' class='c-link'> 詳しくはこちら </a>
+    </div>
   </div>
 </li>

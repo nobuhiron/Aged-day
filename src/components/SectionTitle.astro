@@ -1,0 +1,13 @@
+---
+const { title, en, class: customClass } = Astro.props;
+---
+
+<h2 class={`c-section-title ${customClass || ''}`}>
+  {title && <span class='c-section-title__ja' set:html={title} />}
+  {en && <span class='c-section-title__en'>{en}</span>}
+  <div class='c-section-title__dots'>
+    <span class='c-section-title__dot'></span>
+    <span class='c-section-title__dot'></span>
+    <span class='c-section-title__dot'></span>
+  </div>
+</h2>

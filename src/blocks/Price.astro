@@ -1,13 +1,23 @@
 ---
 const { price } = Astro.props;
 import ItemList from '../blocks/ItemList.astro';
+import PriceTitle from '../components/PriceTitle.astro';
 ---
 
 <div class='p-price'>
-  <h3 class='p-price__title'>
-    {price.min}<span class='p-price__unit'>円</span>
-    ～ {price.max}<span class='p-price__unit'>円</span>
-    おすすめアイテム
-  </h3>
-  <ItemList items={price.items} />
+  <div class='p-price__category'>
+    <PriceTitle />
+    <div class='p-price__items'>
+    </div>
+  </div>
+  <div class='p-price__category'>
+    <PriceTitle />
+    <div class='p-price__items'>
+    </div>
+  </div>
+  <div class='p-price__category'>
+    <PriceTitle />
+    <div class='p-price__items'>
+    </div>
+  </div>
 </div>

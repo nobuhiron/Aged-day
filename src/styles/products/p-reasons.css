@@ -1,0 +1,10 @@
+.p-reasons__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-direction: column-reverse;
+}
+
+.p-reasons__text-area {
+  flex: 1;
+}

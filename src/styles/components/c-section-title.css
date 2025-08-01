@@ -1,0 +1,44 @@
+@import '../global/variables.css';
+
+.c-section-title {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: var(--color-white);
+  &._base {
+    .c-section-title__ja {
+      color: var(--color-main);
+    }
+    .c-section-title__en {
+      color: var(--color-sub);
+    }
+    .c-section-title__dot {
+      background-color: var(--color-sub);
+    }
+  }
+}
+
+.c-section-title__ja {
+  font-size: fz(28, 40);
+  font-weight: var(--font-weight-semibold);
+}
+
+.c-section-title__en {
+  font-size: fz(14, 16);
+  font-weight: var(--font-weight-semibold);
+}
+
+.c-section-title__dots {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.c-section-title__dot {
+  width: 3px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}

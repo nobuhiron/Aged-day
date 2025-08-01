@@ -1,0 +1,27 @@
+.c-price-title {
+  font-weight: var(--font-semibold);
+  color: var(--color-main);
+  font-size: fz(26, 42);
+  text-align: center;
+  position: relative;
+}
+
+.c-price-title__en {
+  display: block;
+  max-width: 107px;
+  margin: 0 auto;
+}
+
+.c-price-title__dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.c-price-title__dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-sub);
+}
