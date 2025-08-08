@@ -1,0 +1,10 @@
+.p-price__items {
+  display: grid;
+  gap: 14px;
+  @media (--md) {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+.p-price__item {
+  border: 1px solid var(--color-sub);
+}

@@ -1,11 +1,15 @@
 @import '../global/variables.css';
-
+.p-nav {
+  padding-block: 35px 27px;
+}
 .p-nav__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  column-gap: 14px;
+  row-gap: 19px;
   @media (--md) {
     grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
   }
 }
 .p-nav__item {

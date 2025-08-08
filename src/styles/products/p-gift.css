@@ -1,15 +1,41 @@
 @import '../global/variables.css';
 .p-gift {
   background-color: #f2eae4;
+  padding-block: 73px 76px;
+  @media (--md) {
+    padding-block-end: 59px;
+  }
+}
+.p-gift__content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-width: 985px;
+  margin-inline: auto;
+  @media (--md) {
+    flex-direction: row;
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .p-gift__img {
   width: calc(215 / 335 * 100%);
   margin-inline: auto;
+  @media (--md) {
+    width: calc(341 / 985 * 100%);
+  }
 }
 
 .p-gift__description {
   font-size: 14px;
   font-weight: var(--fw-medium);
+  display: grid;
+  gap: 20px;
+  @media (--md) {
+    width: calc(602 / 985 * 100%);
+    gap: 13px;
+  }
 }
 
 .p-gift__attention {

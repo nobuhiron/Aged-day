@@ -1,22 +1,29 @@
 @import '../global/variables.css';
 
-.p-info__header {
+.p-info {
+  padding-block-end: 40px;
+  @media (--md) {
+    padding-block-end: 62px;
+  }
 }
 
-.p-info__inner {
+.p-info__wrapper {
   border: 1px solid var(--color-sub3);
-  padding-inline: 30px;
+  padding-inline: 28px;
   padding-block: 18px 35px;
+  @media (--md) {
+    padding-block: 22px 42px;
+  }
+}
+.p-info__inner {
+  max-width: 514px;
+  margin-inline: auto;
 }
 .p-info__header-deco {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  img {
-    max-width: 100%;
-  }
 }
 .p-info__ribbon {
   background-color: var(--color-sub3);
@@ -24,7 +31,7 @@
   font-size: fz(16, 15);
   font-weight: var(--fw-semibold);
   padding-block: 3px;
-  width: calc(246 / 335 * 100%);
+  width: 100%;
   text-align: center;
 }
 
@@ -34,6 +41,10 @@
   font-weight: var(--fw-semibold);
   text-align: center;
   color: var(--color-main);
+  margin-block-start: 18px;
+  @media (--md) {
+    margin-block-start: 12px;
+  }
 }
 
 .p-info__description {
@@ -47,6 +58,10 @@
 
 .p-info__description-above {
   font-size: fz(14, 16);
+  margin-block-start: 9px;
+  @media (--md) {
+    margin-block-start: 4px;
+  }
   span {
     font-size: fz(32, 38);
   }
@@ -57,9 +72,14 @@
 .p-info__description-below {
   font-size: 16px;
   padding-block: 18px 20px;
+  padding-inline: 13px;
   border-top: 2px dotted var(--color-accent);
   border-bottom: 2px dotted var(--color-accent);
-
+  margin-top: 27px;
+  @media (--md) {
+    margin-top: 13px;
+    padding-inline: 6px;
+  }
   span {
     font-size: fz(26, 32);
   }

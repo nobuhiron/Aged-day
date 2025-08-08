@@ -4,27 +4,34 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 
 <section class='p-info'>
   <div class='l-container'>
-    <div class='p-info__inner'>
-      <header class='p-info__header'>
-        <div class='p-info__header-deco'>
-          <div class='p-info__header-icon'>
-            <img
-              src={`${imgBase}/svg/icon_delivery.svg`}
-              alt='森半の敬老の日'
-            />
+    <div class='l-inner'>
+      <div class='p-info__wrapper'>
+        <div class='p-info__inner'>
+          <header class='p-info__header'>
+            <div class='p-info__header-deco'>
+              <div class='p-info__header-icon'>
+                <img
+                  src={`${imgBase}/svg/icon_delivery.svg`}
+                  alt='森半の敬老の日'
+                />
+              </div>
+              <span class='p-info__ribbon'> 2025 敬老の日ギフト </span>
+            </div>
+            <h2 class='p-info__title'>配送日について</h2>
+          </header>
+          <div class='p-info__description'>
+            <p class='p-info__description-above'>
+              今年の敬老の日は<span
+                >9/15<span class='p-info__week'> (月)</span></span
+              >です。
+            </p>
+            <p class='p-info__description-below'>
+              <span>9/11<span class='p-info__week'> (木)</span>正午まで</span
+              >の<br class='is-sm' />
+              ご注文で敬老に日当日配達可能！
+            </p>
           </div>
-          <span class='p-info__ribbon'> 2025 敬老の日ギフト </span>
         </div>
-        <h2 class='p-info__title'>配送日について</h2>
-      </header>
-      <div class='p-info__description'>
-        <p class='p-info__description-above'>
-          今年の敬老の日は<span>9/15<span class='p-info__week'> (月)</span></span>です。
-        </p>
-        <p class='p-info__description-below'>
-          <span>9/11<span class='p-info__week'> (木)</span>正午まで</span>の<br />
-          ご注文で敬老に日当日配達可能！
-        </p>
       </div>
     </div>
   </div>

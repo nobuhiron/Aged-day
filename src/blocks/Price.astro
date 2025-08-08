@@ -1,5 +1,6 @@
 ---
 const { price } = Astro.props;
+import PriceCard from '../components/PriceCard.astro';
 import ItemList from '../blocks/ItemList.astro';
 import PriceTitle from '../components/PriceTitle.astro';
 ---
@@ -7,17 +8,26 @@ import PriceTitle from '../components/PriceTitle.astro';
 <div class='p-price'>
   <div class='p-price__category'>
     <PriceTitle />
-    <div class='p-price__items'>
-    </div>
+    <ul class='p-price__items'>
+      <PriceCard />
+      <PriceCard />
+      <PriceCard />
+    </ul>
   </div>
   <div class='p-price__category'>
     <PriceTitle />
-    <div class='p-price__items'>
-    </div>
+    <ul class='p-price__items'>
+      <PriceCard />
+      <PriceCard />
+      <PriceCard />
+    </ul>
   </div>
   <div class='p-price__category'>
     <PriceTitle />
-    <div class='p-price__items'>
-    </div>
+    <ul class='p-price__items'>
+      <PriceCard />
+      <PriceCard />
+      <PriceCard />
+    </ul>
   </div>
 </div>
