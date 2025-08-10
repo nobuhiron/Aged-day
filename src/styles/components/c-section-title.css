@@ -7,12 +7,17 @@
   gap: 10px;
   text-align: center;
   color: var(--color-white);
+  line-height: 1;
+  letter-spacing: 0.11em;
+
   &._base {
     .c-section-title__ja {
       color: var(--color-main);
+      font-size: fz(28, 40);
     }
     .c-section-title__en {
       color: var(--color-sub);
+      font-size: fz(14, 16);
     }
     .c-section-title__dot {
       background-color: var(--color-sub);
@@ -21,13 +26,16 @@
 }
 
 .c-section-title__ja {
-  font-size: fz(28, 40);
-  font-weight: var(--font-weight-semibold);
+  font-size: fz(26, 40);
+  font-weight: var(--fw-semibold);
+  .p-relaxation-items__header & {
+    font-size: fz(24, 40);
+  }
 }
 
 .c-section-title__en {
-  font-size: fz(14, 16);
-  font-weight: var(--font-weight-semibold);
+  font-size: fz(12, 16);
+  font-weight: var(--fw-semibold);
 }
 
 .c-section-title__dots {

@@ -1,6 +1,7 @@
 ---
 import SectionTitle from '../components/SectionTitle.astro';
 import ItemCard from '../components/ItemCard.astro';
+import { productsFeatured } from '../data/itemCardData.js';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -11,11 +12,14 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
     </div>
   </header>
   <div class='l-container'>
-    <ul class='p-featured-items__cards c-item-card__wrapper'>
-      <ItemCard imgBase={imgBase} />
-      <ItemCard imgBase={imgBase} />
-      <ItemCard imgBase={imgBase} />
-      <ItemCard imgBase={imgBase} />
-    </ul>
+    <div class='c-item-card__category'>
+      <div class='l-inner'>
+        <ul class='c-item-card__items'>
+          {productsFeatured.map((p) => (
+            <ItemCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
+          ))}
+        </ul>
+      </div>
+    </div>
   </div>
 </section>

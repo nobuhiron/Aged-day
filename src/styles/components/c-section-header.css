@@ -5,6 +5,15 @@
   object-fit: cover;
   display: grid;
   place-items: center;
+  @media (--lg) {
+    aspect-ratio: 1440 / 400;
+  }
+  &.p-relaxation-items__header {
+    aspect-ratio: 375 / 221;
+    @media (--lg) {
+      aspect-ratio: 1440 / 400;
+    }
+  }
 
   &::before {
     content: '';

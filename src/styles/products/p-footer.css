@@ -1,12 +1,13 @@
 .p-footer__bg {
   background: url('/images/footer-bg.jpg') no-repeat center center / cover;
-  z-index: -1;
+  /* z-index: -2; */
   position: relative;
   &::before {
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.57);
+    z-index: 0;
   }
 }
 
@@ -16,6 +17,11 @@
   padding-block: 86px 147px;
   display: flex;
   flex-direction: column;
+  row-gap: 49px;
+  @media (--xl) {
+    row-gap: 71px;
+    padding-block: 90px 86px;
+  }
 }
 .p-footer__logo {
   max-width: 163px;
@@ -23,16 +29,24 @@
 }
 .p-footer__nav-list {
   color: var(--color-white);
+  font-weight: var(--fw-bold);
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 22px;
   @media (--xl) {
     flex-direction: row;
-    gap: 26px;
+    gap: 24px;
     justify-content: center;
   }
 }
 .p-footer__nav-item {
   text-align: center;
   font-size: fz(13, 14);
+  &:not(:last-child) {
+    @media (--xl) {
+      border-right: 1px solid var(--color-white);
+      padding-right: 24px;
+    }
+  }
 }

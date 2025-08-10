@@ -33,8 +33,15 @@
   padding-block: 3px;
   width: 100%;
   text-align: center;
-}
-
+  position: relative;
+clip-path: polygon(
+  0% 0%,
+  100% 0%,
+  calc(100% - 0.5em) 50%, /* 右の“凹”の先端（左の凸のミラー） */
+  100% 100%,
+  0% 100%,
+  0.5em 50%               /* 左の“凸”の先端 */
+);}
 .p-info__title {
   align-self: center;
   font-size: fz(32, 42);

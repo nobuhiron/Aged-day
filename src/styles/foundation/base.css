@@ -16,7 +16,7 @@ body {
   font-family: var(--font-jp);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   background-color: var(--color-bg);
   overflow-wrap: break-word;
   height: auto !important;

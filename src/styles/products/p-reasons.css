@@ -1,3 +1,28 @@
+.p-reasons {
+  padding-block: 85px 40px;
+  @media (--md) {
+    padding-block: 177px 140px;
+  }
+}
+
+.p-reasons__header {
+  position: relative;
+}
+.p-reasons__header-deco {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  line-height: 1;
+  font-size: fz(160, 300);
+  font-family: var(--font-en);
+  font-weight: var(--font-weight-semibold);
+  color: #efebde;
+  transform: translateX(-50%) rotate(-12deg);
+  z-index: -1;
+  @media (--md) {
+    bottom: -46px;
+  }
+}
 .p-reasons__item {
   display: flex;
   flex-direction: column;

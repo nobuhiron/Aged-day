@@ -1,0 +1,8 @@
+
+---
+const { href, class: customClass } = Astro.props;
+---
+
+<a href={href} class={`c-link-button ${customClass || ''}`}>
+  <span class="c-link-button__text">詳しくはこちら</span>
+</a>

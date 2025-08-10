@@ -36,6 +36,7 @@
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
+  --fw-bold: 700;
 
   /* 16px ~ 18px のfluid指定 (SCSSのfz関数相当) */
   --font-size-base: clamp(16px, 1.6vw, 18px);

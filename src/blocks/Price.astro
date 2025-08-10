@@ -1,33 +1,39 @@
 ---
-const { price } = Astro.props;
 import PriceCard from '../components/PriceCard.astro';
-import ItemList from '../blocks/ItemList.astro';
 import PriceTitle from '../components/PriceTitle.astro';
+import { products2000, products4000, products6000 } from '../data/priceCardData.js';
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
 <div class='p-price'>
-  <div class='p-price__category'>
-    <PriceTitle />
-    <ul class='p-price__items'>
-      <PriceCard />
-      <PriceCard />
-      <PriceCard />
+  <div class='p-price__bg'>
+  <div class='l-container'>
+    <div class='p-price__category-wrapper'>
+    <div class='p-price__category'>
+      <PriceTitle color='main' priceLow='2,000' priceHigh='4,000' />
+      <ul class='p-price__items'>
+        {products2000.map((p) => (
+          <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+        ))}
+      </ul>
     </ul>
   </div>
-  <div class='p-price__category'>
-    <PriceTitle />
+  <div class='p-price__category _price-4000'>
+    <PriceTitle color='pink' priceLow='4,000' priceHigh='6,000' />
     <ul class='p-price__items'>
-      <PriceCard />
-      <PriceCard />
-      <PriceCard />
+      {products4000.map((p) => (
+        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+      ))}
     </ul>
   </div>
-  <div class='p-price__category'>
-    <PriceTitle />
+  <div class='p-price__category _price-6000'>
+    <PriceTitle color='purple' priceLow='6,000' priceHigh='' />
     <ul class='p-price__items'>
-      <PriceCard />
-      <PriceCard />
-      <PriceCard />
+      {products6000.map((p) => (
+        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+      ))}
     </ul>
   </div>
+</div>
+</div>
 </div>

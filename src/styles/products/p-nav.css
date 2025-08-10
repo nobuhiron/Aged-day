@@ -19,14 +19,15 @@
   height: 90px;
   &::after {
     content: '';
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background-color: var(--color-sub);
     position: absolute;
-    bottom: 10px;
+    bottom: 13px; /* 下からの位置はそのまま */
     left: 50%;
     transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; /* 左辺 */
+    border-right: 6px solid transparent; /* 右辺 */
+    border-top: 6px solid var(--color-sub); /* 下向きにするには上辺に色 */
   }
 }
 .p-nav__link {
