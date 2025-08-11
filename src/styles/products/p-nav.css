@@ -1,13 +1,16 @@
 @import '../global/variables.css';
 .p-nav {
   padding-block: 35px 27px;
+  @media (--lg) {
+    padding-block: 106px 40px;
+  }
 }
 .p-nav__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 14px;
   row-gap: 19px;
-  @media (--md) {
+  @media (--lg) {
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
   }
@@ -17,10 +20,11 @@
   border: 1px solid var(--color-sub);
   border-radius: 8px;
   height: 90px;
+  transition: all 0.3s ease-in-out;
   &::after {
     content: '';
     position: absolute;
-    bottom: 13px; /* 下からの位置はそのまま */
+    bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -28,6 +32,16 @@
     border-left: 6px solid transparent; /* 左辺 */
     border-right: 6px solid transparent; /* 右辺 */
     border-top: 6px solid var(--color-sub); /* 下向きにするには上辺に色 */
+  }
+    &:hover {
+    background-color: var(--color-sub);
+    color: var(--color-white);
+    .p-nav__text {
+      color: var(--color-white);
+    }
+    &::after {
+      border-top: 6px solid var(--color-white);
+    }
   }
 }
 .p-nav__link {
@@ -44,14 +58,53 @@
   left: 50%;
   top: -10px;
   transform: translateX(-50%);
+  .p-nav__item:nth-child(1) & {
+    @media (--lg) {
+      max-width: 70px;
+      top: -60%;
+    }
+  }
+
+  .p-nav__item:nth-child(2) & {
+    @media (--lg) {
+      max-width: 61px;
+      top: -46%;
+    }
+  }
+
+  .p-nav__item:nth-child(3) & {
+    max-width: 58px;
+    top: -18px;
+    @media (--lg) {
+      max-width: 148px;
+      top: -40%;
+    }
+  }
+  .p-nav__item:nth-child(4) & {
+    max-width: 58px;
+    top: -20px;
+    @media (--lg) {
+      max-width: 118px;
+      top: -50%;
+    }
+  }
+  .p-nav__item:nth-child(5) & {
+    max-width: 48px;
+    top: -22px;
+    @media (--lg) {
+      max-width: 106px;
+      top: -68%;
+    }
+  }
 }
 
 .p-nav__text {
   text-align: center;
   font-size: fz(14, 15);
+  line-height: 1.42;
   font-weight: var(--fw-semibold);
   color: var(--color-main);
-  @media (--md) {
+  @media (--lg) {
     font-size: 16px;
   }
 }

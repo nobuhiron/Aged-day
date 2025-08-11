@@ -1,25 +1,32 @@
 .p-reasons {
   padding-block: 85px 40px;
-  @media (--md) {
+  position: relative;
+  @media (--lg) {
     padding-block: 177px 140px;
-    position: relative;
   }
 }
 .p-reasons__deco--above,
 .p-reasons__deco--below {
+    display: none;
   @media (--lg) {
     position: absolute;
+        display: block;
+
   }
 }
 .p-reasons__deco--above {
-  top: 0;
-  right: 0;
-  width: calc(303 / 1440 * 100%);
+  @media (--lg) {
+    top: 0;
+    right: 0;
+    width: calc(303 / 1440 * 100%);
+  }
 }
 .p-reasons__deco--below {
-  bottom: 0;
-  left: 0;
-  width: calc(253 / 1440 * 100%);
+  @media (--lg) {
+    bottom: 0;
+    left: 0;
+    width: calc(253 / 1440 * 100%);
+  }
 }
 
 .p-reasons__header {
@@ -122,6 +129,7 @@
 .p-reasons__text {
   font-size: 14px;
   line-height: 2;
+  letter-spacing: 0.04em;
   margin-block-start: 16px;
   @media (--lg) {
     margin-block-start: 0;

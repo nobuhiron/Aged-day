@@ -42,7 +42,7 @@
   color: var(--color-main);
   position: relative;
 
-  @media (--lg) {
+  @media (--xl) {
     border-radius: 20px;
     padding: calc(40 / 540 * 100%);
     aspect-ratio: 540 / 470;
@@ -55,7 +55,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   height: 100%;
-  @media (--lg) {
+  @media (--xl) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto;
     justify-items: center;
@@ -70,7 +70,7 @@
   object-position: center;
   overflow: hidden;
 
-  @media (--lg) {
+  @media (--xl) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     aspect-ratio: 260 / 255;
@@ -80,7 +80,7 @@
 .c-item-card__text {
   grid-row: 2/ 3;
   grid-column: 1 / 2;
-  @media (--lg) {
+  @media (--xl) {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
     writing-mode: vertical-rl;
@@ -92,14 +92,14 @@
   font-weight: var(--fw-semibold);
   line-height: 1.2;
   padding-block-end: 12px;
-  @media (--lg) {
+  @media (--xl) {
     padding-block-end: 16px;
     text-orientation: upright;
   }
 }
 .c-item-card__description {
   display: none;
-  @media (--lg) {
+  @media (--xl) {
     display: block;
     font-size: 14px;
     border-radius: 12px;
@@ -118,7 +118,7 @@
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   width: 100%;
-  @media (--lg) {
+  @media (--xl) {
     border-top: none;
     padding-block-start: 0;
     border-bottom: 2px dashed var(--color-sub);

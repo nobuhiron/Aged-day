@@ -19,7 +19,7 @@ export const productsFeatured = [
   {
     image: 'item-1.jpg',
     title: '京の現代名工・吉田利一作 宇治玉露',
-    titleSub: '［ 100g缶］',
+    titleSub: '［100g缶］',
     price: '10,800',
     description:
       '「宇治にこの人あり」名人 吉田利一氏が丁寧に作り上げたまさに「至高の逸品」です。',
@@ -96,7 +96,7 @@ export const productsRelaxation = [
   {
     image: 'item-1.jpg',
     title: '〈 五香 （ごこう）〉3種詰め合わせ',
-    titleSub: '［煎茶・雁が音・抹茶入り玄米茶 各 1 袋 ］',
+    titleSub: '［煎茶・雁が音・抹茶入り玄米茶 各 1 袋］',
     price: '2,970',
     description:
       '森半の茶師がこだわり抜いた厳選茶葉のみをブレンドして仕上げた「五香（ごこう）」シリーズの普段使いしやすい3種詰め合わせ。',

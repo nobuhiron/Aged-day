@@ -16,7 +16,12 @@
   max-width: 107px;
   margin: 0 auto;
 }
-
+.c-price-title__ja {
+  display: block;
+  line-height: 1.5;
+  font-size: fz(20, 26) !important;
+  letter-spacing: 0.11em;
+}
 .c-price-title__dots {
   margin-block-start: 12px;
   display: flex;

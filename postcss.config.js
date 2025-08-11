@@ -1,5 +1,5 @@
 // postcss.config.js
-import functions from './src/js/functions.js';
+import functions from './public/js/functions.js';
 
 export default {
   plugins: {

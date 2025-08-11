@@ -53,13 +53,14 @@
   display: flex;
   gap: 4px;
   justify-content: center;
+  margin-block-start: 16px;
   @media (--md) {
     display: none;
   }
 }
 
 .p-gift__title-dot {
-  width: 3px;
+  width: 4px;
   aspect-ratio: 1 / 1;
   background-color: #c96645;
   border-radius: 50%;
@@ -71,11 +72,13 @@
   gap: 9px;
   max-width: 985px;
   margin-inline: auto;
+  margin-block-start: 23px;
   @media (--md) {
     flex-direction: row;
     gap: 42px;
     justify-content: center;
     align-items: center;
+    margin-block-start: 36px;
   }
 }
 .p-gift__img {
@@ -105,6 +108,8 @@
   font-weight: var(--fw-medium);
   display: grid;
   gap: 20px;
+  line-height: 1.92;
+  letter-spacing: 0.04em;
   @media (--md) {
     width: calc(602 / 985 * 100%);
     gap: 13px;
@@ -114,7 +119,7 @@
 .p-gift__link {
   margin-block-start: 27px;
   @media (--md) {
-    margin-block-start: 0;
+    margin-block-start: 30px;
   }
 }
 
@@ -124,6 +129,8 @@
   padding: 15px 20px;
   font-size: fz(12, 14);
   border-radius: 24px;
+  line-height: 2;
+  letter-spacing: 0.01em;
   @media (--md) {
     padding: 16px 17px;
   }

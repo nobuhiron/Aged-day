@@ -9,12 +9,14 @@
     grid-template-columns: 375fr 676fr;
     grid-template-rows: auto;
     column-gap: 17px;
+    align-items: center;
   }
 }
 .p-featured-items__pickup-img-wrapper {
   display: grid;
   grid-template-columns: 224fr 60fr;
   column-gap: 10px;
+
   @media (--lg) {
     grid-template-columns: 312fr 347fr;
     column-gap: 16px;
