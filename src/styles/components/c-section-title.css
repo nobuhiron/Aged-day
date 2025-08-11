@@ -9,6 +9,9 @@
   color: var(--color-white);
   line-height: 1;
   letter-spacing: 0.11em;
+  @media (--lg) {
+    gap: 22px;
+  }
 
   &._base {
     .c-section-title__ja {

@@ -10,7 +10,16 @@
   font-size: fz(20, 24);
   line-height: 1;
   letter-spacing: 0.12em;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   color: var(--color-sub);
   font-family: var(--font-en);
+}
+
+.c-reasons-title__ja {
+  font-size: fz(24, 40);
+  letter-spacing: 0.04em;
+  font-weight: var(--fw-medium);
+  @media (--lg) {
+    text-orientation: upright; /* 数字・英字も縦向き */
+  }
 }

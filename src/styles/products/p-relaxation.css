@@ -1,3 +1,27 @@
 .p-relaxation-items__header-image {
   background: url('/images/relaxation-item_mv.jpg') center center / cover;
 }
+
+.p-relaxation-items__deco {
+  display: none;
+  @media (--lg) {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.p-relaxation-items__deco--1 {
+  top: 36%;
+  left: 2%;
+  width: calc(74 / 1340 * 100%);
+}
+.p-relaxation-items__deco--2 {
+  top: 6%;
+  right:1%;
+  width: calc(126 / 1340 * 100%);
+}
+.p-relaxation-items__deco--3 {
+  bottom: 26%;
+  right: 4%;
+  width: calc(51 / 1340 * 100%);
+}

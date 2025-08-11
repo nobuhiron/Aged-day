@@ -2,6 +2,7 @@
 import SectionTitle from '../components/SectionTitle.astro';
 import ItemCard from '../components/ItemCard.astro';
 import { productsFeatured } from '../data/itemCardData.js';
+import LinkButton from '../components/LinkButton.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -13,12 +14,80 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   </header>
   <div class='l-container'>
     <div class='c-item-card__category'>
+      <div class='p-featured-items__deco--2'>
+        <img src={`${imgBase}/svg/featured-deco2.svg`} alt='' />
+      </div>
       <div class='l-inner'>
+        <div class='p-featured-items__pickup'>
+          <div class='p-featured-items__pickup-img-wrapper'>
+            <div class='p-featured-items__pickup-image'>
+              <img
+                src={`${imgBase}/featured-main.png`}
+                alt='ピックアップアイテム'
+              />
+            </div>
+            <div class='p-featured-items__pickup-sub-images'>
+              <div class='p-featured-items__pickup-image--sub'>
+                <img
+                  src={`${imgBase}/featured-sub1.png`}
+                  alt='ピックアップアイテム'
+                />
+              </div>
+              <div class='p-featured-items__pickup-image--sub'>
+                <img
+                  src={`${imgBase}/featured-sub2.png`}
+                  alt='ピックアップアイテム'
+                />
+              </div>
+              <div class='p-featured-items__pickup-image--sub'>
+                <img
+                  src={`${imgBase}/featured-sub3.png`}
+                  alt='ピックアップアイテム'
+                />
+              </div>
+              <div class='p-featured-items__pickup-image--sub'>
+                <img
+                  src={`${imgBase}/featured-sub4.png`}
+                  alt='ピックアップアイテム'
+                />
+              </div>
+            </div>
+          </div>
+          <div class='p-featured-items__pickup-text'>
+            <h3 class='p-featured-items__pickup-title'>
+              お茶屋の<br class='is-lg' />スイーツ満足セット
+            </h3>
+            <div class='p-featured-items__pickup-price'>
+              ¥
+              <span class='p-featured-items__pickup-price-amount'>5,100</span>
+              (税込)
+              <div class='p-featured-items__pickup-deco--1'>
+                <img src={`${imgBase}/svg/featured-deco1.svg`} alt='' />
+              </div>
+            </div>
+            <p class='p-featured-items__pickup-description'>
+              人気の抹茶スイーツが8種類入った詰め合わせ。ご自宅用はもちろん、ご進物にも最適です。
+            </p>
+            <LinkButton href='/' class='p-featured-items__pickup-link' />
+          </div>
+        </div>
         <ul class='c-item-card__items'>
-          {productsFeatured.map((p) => (
-            <ItemCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
-          ))}
+          {
+            productsFeatured.map((p) => (
+              <ItemCard
+                image={p.image}
+                title={p.title}
+                titleSub={p.titleSub}
+                price={p.price}
+                description={p.description}
+                href={p.href}
+              />
+            ))
+          }
         </ul>
+      </div>
+      <div class='p-featured-items__deco--3'>
+        <img src={`${imgBase}/svg/featured-deco3.svg`} alt='' />
       </div>
     </div>
   </div>

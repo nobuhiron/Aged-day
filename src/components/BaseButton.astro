@@ -1,0 +1,7 @@
+---
+const { href, text, class: customClass } = Astro.props;
+---
+
+<a href={href} class={`c-base-button ${customClass || ''}`}>
+  <span class='c-base-button__text'>{text}</span>
+</a>

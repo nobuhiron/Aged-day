@@ -34,14 +34,16 @@
   width: 100%;
   text-align: center;
   position: relative;
-clip-path: polygon(
-  0% 0%,
-  100% 0%,
-  calc(100% - 0.5em) 50%, /* 右の“凹”の先端（左の凸のミラー） */
-  100% 100%,
-  0% 100%,
-  0.5em 50%               /* 左の“凸”の先端 */
-);}
+  letter-spacing: 0.07em;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    calc(100% - 0.5em) 50%,
+    /* 右の“凹”の先端（左の凸のミラー） */ 100% 100%,
+    0% 100%,
+    0.5em 50% /* 左の“凸”の先端 */
+  );
+}
 .p-info__title {
   align-self: center;
   font-size: fz(32, 42);
@@ -49,8 +51,10 @@ clip-path: polygon(
   text-align: center;
   color: var(--color-main);
   margin-block-start: 18px;
+  letter-spacing: 0.12em;
   @media (--md) {
     margin-block-start: 12px;
+    letter-spacing: 0.16em;
   }
 }
 
@@ -66,8 +70,11 @@ clip-path: polygon(
 .p-info__description-above {
   font-size: fz(14, 16);
   margin-block-start: 9px;
+  letter-spacing: 0.04em;
   @media (--md) {
     margin-block-start: 4px;
+      letter-spacing: 0.15em;
+
   }
   span {
     font-size: fz(32, 38);

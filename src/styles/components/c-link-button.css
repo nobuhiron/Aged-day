@@ -1,6 +1,6 @@
 @import '../global/variables.css';
 
-.c-link-button {
+.c-link-button:not(.p-featured-items__pickup-link) {
   display: inline-flex;
   position: absolute;
   inset: 0;
@@ -9,7 +9,7 @@
   color: transparent;
   text-align: center;
   width: 100%;
-  @media (--md) {
+  @media (--lg) {
     align-items: center;
     justify-content: center;
     padding: 13px 12px;
@@ -45,18 +45,35 @@
     }
   }
 }
-.c-link-button__text {
+.c-link-button__text:not(<.p-featured-items__pickup-link) {
   position: absolute;
   font-weight: var(--fw-bold);
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  @media (--md) {
+  @media (--lg) {
     position: relative;
     width: auto;
     height: auto;
     overflow: visible;
     clip: auto;
+  }
+}
+
+.p-featured-items__pickup-link {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  background: var(--color-sub);
+  color: var(--color-white);
+  border-radius: 100px;
+  height: 48px;
+  max-width: 270px;
+  margin-inline: auto;
+  margin-block-start: 22px;
+  @media (--lg) {
+    margin-block-start: 38px;
   }
 }

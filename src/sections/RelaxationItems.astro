@@ -9,19 +9,37 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   <header class='p-relaxation-items__header'>
     <div class='p-relaxation-items__header-image c-section-header__image'>
       <SectionTitle
-        title='"ほっとする"<br class=is-lg>ひとときを贈る<br class=is-lg>おすすめアイテム'
+        title='"ほっとする"<br class=is-sm>ひとときを贈る<br class=is-sm>おすすめアイテム'
         en='Give the gift of "relaxation"'
       />
     </div>
   </header>
   <div class='l-container'>
     <div class='c-item-card__category'>
+      <div class='p-relaxation-items__deco p-relaxation-items__deco--1'>
+        <img src={`${imgBase}/svg/relaxation-deco1.svg`} alt='' />
+      </div>
       <div class='l-inner'>
         <ul class='c-item-card__items'>
-          {productsRelaxation.map((p) => (
-            <ItemCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
-          ))}
+          {
+            productsRelaxation.map((p) => (
+              <ItemCard
+                image={p.image}
+                title={p.title}
+                titleSub={p.titleSub}
+                price={p.price}
+                description={p.description}
+                href={p.href}
+              />
+            ))
+          }
         </ul>
+      </div>
+      <div class='p-relaxation-items__deco p-relaxation-items__deco--2'>
+        <img src={`${imgBase}/svg/relaxation-deco2.svg`} alt='' />
+      </div>
+      <div class='p-relaxation-items__deco p-relaxation-items__deco--3'>
+        <img src={`${imgBase}/svg/relaxation-deco3.svg`} alt='' />
       </div>
     </div>
   </div>
