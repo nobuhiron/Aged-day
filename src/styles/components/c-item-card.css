@@ -68,12 +68,14 @@
   aspect-ratio: 135 / 122;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
   overflow: hidden;
 
   @media (--xl) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    aspect-ratio: 260 / 255;
+    aspect-ratio: revert;
+    max-width: 260px;
   }
 }
 
@@ -91,10 +93,15 @@
   font-size: fz(14, 28);
   font-weight: var(--fw-semibold);
   line-height: 1.2;
-  padding-block-end: 12px;
+  padding-block: 12px;
   @media (--xl) {
     padding-block-end: 16px;
+    padding-block-start: 0;
     text-orientation: upright;
+  }
+  .c-item-card__title-sub {
+    font-size: 0.8em;
+    display: block;
   }
 }
 .c-item-card__description {
