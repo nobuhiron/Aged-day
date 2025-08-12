@@ -11,7 +11,7 @@ const { image, title, price, description, titleSub, href } = Astro.props;
       <img src={`${imgBase}${image}`} alt={title} />
     </div>
     <div class='c-item-card__price'>
-      ¥
+      &yen;
       <span class='c-item-card__price-amount'>{price}</span>
       (税込)
     </div>
@@ -24,6 +24,6 @@ const { image, title, price, description, titleSub, href } = Astro.props;
         <p>{description}</p>
       </div>
     </div>
-      <LinkButton href={`${linkBase}${href}`} class='c-item-card__link' />
+    <LinkButton href={`${linkBase}${href}`} class='c-item-card__link' />
   </div>
 </li>

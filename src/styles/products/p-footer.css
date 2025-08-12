@@ -1,5 +1,5 @@
 .p-footer__bg {
-  background: url('/images/footer-bg.jpg') no-repeat center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/footer-bg.jpg') no-repeat center center / cover;
   /* z-index: -2; */
   position: relative;
   &::before {

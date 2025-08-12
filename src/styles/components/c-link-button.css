@@ -17,21 +17,21 @@
     justify-content: center;
     padding: 13px 12px;
     background: var(--color-sub);
-    color: var(--color-white);
+    color: var(--color-white) !important;
     border-radius: 100px;
     margin-block-start: 12px;
     inset: auto;
     position: relative;
     &:hover {
       background: var(--color-white);
-      color: var(--color-sub);
+      color: var(--color-sub)!important;
       border: 1px solid var(--color-sub);
     }
     ._price-4000 & {
       background: var(--color-sub3);
       &:hover {
         background: var(--color-white);
-        color: var(--color-sub3);
+        color: var(--color-sub3)!important;
         border: 1px solid var(--color-sub3);
       }
     }
@@ -39,7 +39,7 @@
       background: var(--color-sub4);
       &:hover {
         background: var(--color-white);
-        color: var(--color-sub4);
+        color: var(--color-sub4)!important;
         border: 1px solid var(--color-sub4);
       }
     }
@@ -84,7 +84,7 @@
   text-align: center;
   justify-items: center;
   background: var(--color-sub);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border-radius: 100px;
   height: 48px;
   max-width: 270px;
@@ -96,7 +96,7 @@
   }
   &:hover {
     background: var(--color-white);
-    color: var(--color-sub);
+    color: var(--color-sub)!important;
     border: 1px solid var(--color-sub);
   }
 }

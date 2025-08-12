@@ -5,7 +5,7 @@
   place-items: center;
   height: 48px;
   background: var(--color-sub);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border-radius: 100px;
   max-width: 270px;
   margin-inline: auto;
@@ -23,13 +23,13 @@
     }
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub2);
+      color: var(--color-sub2)!important;
       border: 1px solid var(--color-sub2);
     }
   }
   &:hover {
     background-color: var(--color-white);
-    color: var(--color-sub);
+    color: var(--color-sub)!important;
     border: 1px solid var(--color-sub);
   }
 }
