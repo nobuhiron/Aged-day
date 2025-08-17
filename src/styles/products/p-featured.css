@@ -1,5 +1,6 @@
 .p-featured-items__header-image {
-  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/featured-item_mv.jpg') center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/featured-item_mv.jpg')
+    center center / cover;
 }
 .p-featured-items__pickup {
   display: grid;
@@ -57,6 +58,15 @@
   right: 0;
   width: calc(42 / 335 * 100%);
   z-index: -1;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana2.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+  }
   @media (--lg) {
     display: none;
   }
@@ -94,4 +104,69 @@
   border-radius: 8px;
   padding-inline: 6px;
   padding-block: 14px;
+  @media (--lg) {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      bottom: 0px;
+      background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana4.svg') no-repeat center;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.p-featured-items__pickup-link {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: -20px;
+    background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana3.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+    @media (--md) {
+      left: -30%;
+    }
+    @media (--lg) {
+      display: none;
+    }
+  }
+}
+
+.p-featured-items__item--2 {
+  @media (--xl) {
+    .c-item-card__content {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 16px;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana2.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.p-featured-items__item--3 {
+  @media (--xl) {
+    .c-item-card__title {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana1.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }

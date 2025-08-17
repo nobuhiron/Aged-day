@@ -70,7 +70,26 @@
   padding-block: 10px;
   padding-inline: 12px;
   color: var(--color-text);
+  position: relative;
   @media (--lg) {
     display: block;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: -16px;
+    background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana1.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: -14px;
+    bottom: 6px;
+    background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana4.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
   }
 }

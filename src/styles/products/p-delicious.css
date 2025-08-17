@@ -1,3 +1,38 @@
 .p-delicious-items__header-image {
-  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/delicious-item_mv.jpg') center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/delicious-item_mv.jpg')
+    center center / cover;
+}
+
+.p-delicious-items__item--2 {
+  @media (--xl) {
+    .c-item-card__link {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 0;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana2.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.p-delicious-items__item--3 {
+  @media (--xl) {
+    .c-item-card__content {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 20px;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana1.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }

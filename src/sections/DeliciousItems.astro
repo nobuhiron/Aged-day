@@ -18,7 +18,7 @@ import { productsDelicious } from '../data/itemCardData.js';
       <div class='l-inner'>
         <ul class='c-item-card__items'>
           {
-            productsDelicious.map((p) => (
+            productsDelicious.map((p, index) => (
               <ItemCard
                 image={p.image}
                 title={p.title}
@@ -26,6 +26,7 @@ import { productsDelicious } from '../data/itemCardData.js';
                 price={p.price}
                 description={p.description}
                 href={p.href}
+                class={`p-delicious-items__item--${index + 1}`}
               />
             ))
           }

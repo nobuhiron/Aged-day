@@ -22,7 +22,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       <div class='l-inner'>
         <ul class='c-item-card__items'>
           {
-            productsRelaxation.map((p) => (
+            productsRelaxation.map((p, index) => (
               <ItemCard
                 image={p.image}
                 title={p.title}
@@ -30,6 +30,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
                 price={p.price}
                 description={p.description}
                 href={p.href}
+                class={`p-relaxation-items__item--${index + 1}`}
               />
             ))
           }

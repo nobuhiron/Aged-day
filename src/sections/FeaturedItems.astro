@@ -77,7 +77,7 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
         </div>
         <ul class='c-item-card__items'>
           {
-            productsFeatured.map((p) => (
+            productsFeatured.map((p, index) => (
               <ItemCard
                 image={p.image}
                 title={p.title}
@@ -85,7 +85,7 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
                 price={p.price}
                 description={p.description}
                 href={p.href}
-              />
+                class={`p-featured-items__item--${index + 1}`}              />
             ))
           }
         </ul>
