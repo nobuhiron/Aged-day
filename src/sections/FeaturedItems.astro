@@ -23,7 +23,7 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
           <div class='p-featured-items__pickup-img-wrapper'>
             <div class='p-featured-items__pickup-image'>
               <img
-                src={`${imgBase}featured-main.png`}
+                src={`${imgBase}featured-main.jpg`}
                 alt='ピックアップアイテム'
               />
             </div>
@@ -56,7 +56,7 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
           </div>
           <div class='p-featured-items__pickup-text'>
             <h3 class='p-featured-items__pickup-title'>
-              お茶屋のスイーツ満足セット
+              お茶屋の<br class="is-lg" />スイーツ満足セット
             </h3>
             <div class='p-featured-items__pickup-price'>
               &yen;
@@ -85,7 +85,8 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
                 price={p.price}
                 description={p.description}
                 href={p.href}
-                class={`p-featured-items__item--${index + 1}`}              />
+                class={`p-featured-items__item--${index + 1}`}
+              />
             ))
           }
         </ul>

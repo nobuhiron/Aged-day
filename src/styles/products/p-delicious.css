@@ -12,7 +12,8 @@
         position: absolute;
         left: -40px;
         top: 0;
-        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana2.svg') no-repeat center;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana2.svg')
+          no-repeat center;
         width: 30px;
         height: 30px;
       }
@@ -21,6 +22,9 @@
 }
 
 .p-delicious-items__item--3 {
+  .c-item-card__title-ja {
+    font-size: fz(13, 24);
+  }
   @media (--xl) {
     .c-item-card__content {
       position: relative;
@@ -29,10 +33,21 @@
         position: absolute;
         left: -6px;
         top: 20px;
-        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana1.svg') no-repeat center;
+        background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/aged-day/images/svg/hana1.svg')
+          no-repeat center;
         width: 30px;
         height: 30px;
       }
+    }
+  }
+}
+
+.p-delicious-items__item--4 {
+  .c-item-card__title-ja {
+    letter-spacing: 0;
+    .fz-sm {
+      font-size: fz(14, 20);
+      letter-spacing: -0.06em;
     }
   }
 }

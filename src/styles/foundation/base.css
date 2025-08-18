@@ -10,16 +10,18 @@ html {
   /* scrollバーの常時表示は避ける（必要に応じて追加） */
   overflow-x: hidden;
 }
-
 body {
+  overflow-wrap: break-word;
+  height: auto !important;
+}
+
+main {
   color: var(--color-black);
   font-family: var(--font-jp);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   font-weight: var(--fw-medium);
   background-color: var(--color-bg);
-  overflow-wrap: break-word;
-  height: auto !important;
 }
 
 button,
@@ -61,6 +63,18 @@ img {
 .is-lg {
   display: none;
   @media (--lg) {
+    display: block;
+  }
+}
+.br-sm {
+  @media (--md) {
+    display: none;
+  }
+}
+
+.br-xl {
+  display: none;
+  @media (--xl) {
     display: block;
   }
 }

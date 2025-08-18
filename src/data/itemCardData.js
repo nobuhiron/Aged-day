@@ -1,7 +1,8 @@
 export const productsFeatured = [
   {
     image: 'items/pickup-img1.jpg',
-    title: '銘茶五香（ごこう）煎茶・抹茶カステラ詰合せ',
+    title:
+      '銘茶五香（ごこう）</br>煎茶・抹茶カステラ<span class="br-sm"></span>詰合せ',
     titleSub: '',
     price: '2,945',
     description:
@@ -10,7 +11,7 @@ export const productsFeatured = [
   },
   {
     image: 'items/pickup-img2.jpg',
-    title: '抹茶スイーツお試しセット',
+    title: '抹茶スイーツ<span class="br-xl"></span>お試しセット',
     titleSub: '',
     price: '1,980',
     description:
@@ -19,8 +20,9 @@ export const productsFeatured = [
   },
   {
     image: 'items/pickup-img3.jpg',
-    title: '京の現代名工・吉田利一作 宇治玉露',
-    titleSub: '［100g缶］',
+    title:
+      '京の現代名工・吉田利一作 宇治玉露<span class="fz-sm">［100g缶］</span>',
+    titleSub: '',
     price: '10,800',
     description:
       '「宇治にこの人あり」名人 吉田利一氏が丁寧に作り上げたまさに「至高の逸品」です。',
@@ -28,8 +30,8 @@ export const productsFeatured = [
   },
   {
     image: 'items/pickup-img4.jpg',
-    title: '五感で味わう急須 CHASTA',
-    titleSub: '（チャスタ）',
+    title: '五感で味わう急須 CHASTA<span class="fz-sm">（チャスタ））</span>',
+    titleSub: '',
     price: '3,300',
     description:
       'これまでの急須では実現できなかった利便性、現代のライフスタイルに寄り添った多用途が特徴の次世代茶器',
@@ -49,7 +51,8 @@ export const productsDelicious = [
   },
   {
     image: 'items/delicious-img2.jpg',
-    title: '抹茶フィナンシェ・抹茶ヴァッフェル詰合せ',
+    title:
+      '抹茶フィナンシェ・<span class="br-xl"></span>抹茶ヴァッフェル詰合せ',
     titleSub: '',
     price: '1,576',
     description:
@@ -58,7 +61,7 @@ export const productsDelicious = [
   },
   {
     image: 'items/delicious-img3.jpg',
-    title: 'クリームサンド ヴァッフェル（抹茶・ほうじ茶）詰合せ',
+    title: 'クリームサンドヴァッフェル（抹茶・ほうじ茶）詰合せ',
     titleSub: '',
     price: '1,954',
     description:
@@ -67,8 +70,9 @@ export const productsDelicious = [
   },
   {
     image: 'items/delicious-img4.jpg',
-    title: '極上手作り宇治抹茶カステラ',
-    titleSub: '［5切］',
+    title:
+      '極上手作り<span class="br-xl"></span>宇治抹茶カステラ<span class="fz-sm">［5切］</span>',
+    titleSub: '',
     price: '1,058',
     description:
       '上級の宇治抹茶をたっぷり使って熟練の職人の手で焼き上げた極上カステラ です。',
@@ -79,7 +83,8 @@ export const productsDelicious = [
 export const productsRelaxation = [
   {
     image: 'items/relaxation-img1.jpg',
-    title: 'CHASTA（チャスタ）・ISSEN ギフトセット',
+    title:
+      'CHASTA <span class = "fz-sm">（チャスタ）</span>・ISSEN ギフトセット',
     titleSub: '',
     price: '5,390',
     description:
@@ -88,7 +93,7 @@ export const productsRelaxation = [
   },
   {
     image: 'items/relaxation-img2.jpg',
-    title: '〈宇治〉名品銘茶 詰め合わせ（高山寺）',
+    title: '〈宇治〉名品銘茶<span class = "br-xl">詰め合わせ（高山寺）',
     titleSub: '',
     price: '5,400',
     description:
@@ -97,8 +102,9 @@ export const productsRelaxation = [
   },
   {
     image: 'items/relaxation-img3.jpg',
-    title: '〈 五香（ごこう）〉3種詰め合わせ',
-    titleSub: '［煎茶・雁が音・抹茶入り玄米茶 各1袋］',
+    title:
+      '〈五香（ごこう）〉3種詰め合わせ<span class="fz-sm"><span class="br-xl"></span>［煎茶・雁が音・抹茶入り玄米茶 各1袋］</span>',
+    titleSub: '',
     price: '2,970',
     description:
       '森半の茶師がこだわり抜いた厳選茶葉のみをブレンドして仕上げた「五香（ごこう）」シリーズの普段使いしやすい3種詰め合わせ。',
@@ -107,7 +113,7 @@ export const productsRelaxation = [
   {
     image: 'items/relaxation-img4.jpg',
     title:
-      'KFK（カフカ） 〈ドリップコーヒー〉ロマンスコーヒーセレクションギフトセット',
+      'KFK<span class="fz-sm">（カフカ）</span>〈ドリップコーヒー〉ロマンスコーヒーセレクションギフトセット',
     titleSub: '',
     price: '2,268',
     description:

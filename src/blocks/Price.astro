@@ -12,7 +12,7 @@ import { products2000, products4000, products6000 } from '../data/priceCardData.
       <PriceTitle color='main' priceLow='2,000' priceHigh='4,000' />
       <ul class='p-price__items'>
         {products2000.map((p) => (
-          <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+          <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
         ))}
       </ul>
     </ul>
@@ -21,7 +21,7 @@ import { products2000, products4000, products6000 } from '../data/priceCardData.
     <PriceTitle color='pink' priceLow='4,000' priceHigh='6,000' />
     <ul class='p-price__items'>
       {products4000.map((p) => (
-        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
       ))}
     </ul>
   </div>
@@ -29,7 +29,7 @@ import { products2000, products4000, products6000 } from '../data/priceCardData.
     <PriceTitle color='purple' priceLow='6,000' priceHigh='' />
     <ul class='p-price__items'>
       {products6000.map((p) => (
-        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} />
+        <PriceCard image={p.image} title={p.title} titleSub={p.titleSub} price={p.price} description={p.description} href={p.href} />
       ))}
     </ul>
   </div>
